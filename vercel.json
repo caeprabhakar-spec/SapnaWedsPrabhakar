@@ -5,6 +5,10 @@
     {
       "source": "/videos/:path*",
       "destination": "/public/videos/:path*"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/public/images/:path*"
     }
   ]
 }

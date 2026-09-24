@@ -1,15 +1,17 @@
 // Edit this file to change all invitation text, names, dates, venues and events.
 // Video files belong in public/videos/; keep these URL paths for hosted builds.
 window.WEDDING_CONFIG = {
-  brideName: "Sapna",
-  groomName: "Prabhakar",
+  brideName: "Aarohi",
+  groomName: "Vihaan",
   weddingDate: "2027-02-14T18:00:00+05:30",
-  displayDate: "23 April 2019",
-  weddingVenue: "The Royal Courtyard · Kanpur, Uttar Pradesh",
+  displayDate: "14 February 2027",
+  weddingVenue: "The Royal Courtyard · Jaipur, Rajasthan",
   coverVideo: "/videos/lock-cover.mp4",
-  heroVideo: "/videos/hero.mp4",
+  heroVideo: "/videos/cover.mp4",
+  coupleImage: "/images/couple.png",
   youtubeVideo: "https://www.youtube.com/shorts/inc2iXzTUbI",
   rsvpBy: "Please reply by 14 January 2027",
+  rsvpMessage: "Hello, I would like to RSVP for Aarohi and Vihaan’s wedding.",
   contactName: "The Families",
   contactPhone: "",
   events: [
@@ -22,8 +24,8 @@ window.WEDDING_CONFIG = {
 };
 
 window.INVITATION_COPY = {
-  pageTitle: "A Wedding Invitation",
-  pageDescription: "A wedding invitation, made with love.",
+  pageTitle: "Aarohi & Vihaan | Royal Antique Wedding Invitation",
+  pageDescription: "Aarohi and Vihaan invite you to celebrate their wedding in Jaipur on 14 February 2027.",
   coverHint: "Touch anywhere to open",
   coverAriaLabel: "Tap to open the wedding invitation",
   coverVideoLabel: "Wedding invitation cover",
@@ -33,7 +35,7 @@ window.INVITATION_COPY = {
   welcomeKicker: "A new chapter begins",
   welcomeTitle: "Together with our families",
   welcomeBody: "With hearts full of joy and gratitude, we invite you to celebrate the beginning of our forever. Your presence will make our most cherished moments complete.",
-  countdownKicker: "The days are drawing near",
+  countdownKicker: "Wedding Day",
   countdownTitle: "Until we say “I do”",
   countdownUnits: ["Days", "Hours", "Minutes", "Seconds"],
   eventsOrnament: "✦",
@@ -49,9 +51,20 @@ window.INVITATION_COPY = {
   memoriesKicker: "A note for our favourite people",
   memoriesTitle: "The best memories\nare made together",
   memoriesBody: "Bring your smiles, your blessings, and your dancing shoes. We cannot wait to celebrate with you.",
+  chapterTitle: "Chapter Begins",
+  scratchKicker: "A date to remember",
+  scratchTitle: "A little secret, just for you",
+  scratchPrompt: "Reveal Our Date",
+  scratchAriaLabel: "Scratch to reveal the wedding date",
+  scratchHint: "Use your finger or mouse to reveal the date",
+  scratchRevealed: "Our wedding date is revealed",
+  scratchOverline: "The day we become one",
+  scratchBlessing: "We cannot wait to celebrate with you",
   rsvpKicker: "We would love to celebrate with you",
-  rsvpTitle: "Kindly join us",
+  rsvpTitle: "We would be delighted to celebrate with you.",
+  rsvpButton: "WhatsApp RSVP",
   closingKicker: "With love, always",
   closingMark: "&",
-  closingBody: "We cannot wait to begin our forever with you by our side."
+  closingBody: "We cannot wait to begin our forever with you by our side.",
+  coupleImageAlt: "Aarohi and Vihaan in their wedding attire"
 };
