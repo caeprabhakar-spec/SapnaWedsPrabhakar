@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4b302b">
+  <meta name="description" content="">
+  <title></title>
+  <style>
+    :root{--ivory:#f7f2e9;--paper:#fcf9f3;--ink:#402f2b;--maroon:#692f39;--gold:#a88755;--muted:#85776c;--line:#dfd2bf;--serif:Georgia,'Times New Roman',serif;--sans:'Avenir Next',Avenir,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#59473e;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}html.opening-locked,body.opening-locked{height:100%;overflow:hidden;overscroll-behavior:none;touch-action:none}.invitation{width:100%;max-width:672px;margin:0 auto;background:var(--ivory);overflow:hidden;box-shadow:0 24px 90px #2e211d55}.cover{position:fixed;z-index:20;top:0;left:50%;transform:translateX(-50%);width:min(100vw,672px);height:100svh;min-height:590px;max-height:940px;background:#241c19;overflow:hidden;cursor:pointer;isolation:isolate;touch-action:manipulation;transition:background-color 1.8s ease}.cover video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.8s ease-in-out}.cover.transitioning{background-color:transparent}.cover.transitioning video{opacity:0}.cover:before{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 48%,#fffdf1 0%,#fff8e8b0 21%,#fff4df45 54%,#fff6e800 82%)}.cover.transitioning:before{animation:warmBloom 1.8s ease-in-out forwards}.cover:after{content:"";position:absolute;z-index:1;inset:0;pointer-events:none;background:linear-gradient(180deg,#1b12142b,transparent 38%,#170e1233);opacity:.65;transition:opacity 1.4s ease}.cover.transitioning:after{opacity:0}.cover-hint{position:absolute;z-index:2;left:0;right:0;bottom:max(35px,env(safe-area-inset-bottom));text-align:center;color:#fff5e8;text-transform:uppercase;letter-spacing:.25em;font-size:9px;opacity:.83;transition:opacity .5s}.cover.started .cover-hint{opacity:0}.hero{position:relative;min-height:610px;height:min(100svh,850px);max-height:850px;overflow:hidden;background:#30201e;isolation:isolate}.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:heroDrift 24s ease-in-out infinite alternate}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#24181412 22%,#24181418 46%,#241814a6 100%);z-index:0}.hero-copy{position:absolute;z-index:1;inset:auto 20px 10%;text-align:center;color:#fff7e9;text-shadow:0 2px 18px #1c1111a6;opacity:0;transform:translateY(18px);transition:opacity 1.2s ease,transform 1.2s ease}.hero.visible .hero-copy{opacity:1;transform:none}.eyebrow{font-size:9px;letter-spacing:.3em;text-transform:uppercase}.hero-names{font:clamp(40px,11vw,74px)/.98 var(--serif);font-weight:400;margin:18px 0 14px;letter-spacing:-.035em}.amp{display:block;font-size:.46em;font-style:italic;margin:7px 0}.hero-date{font:italic 17px var(--serif);letter-spacing:.08em}.hero-scroll{display:block;margin:36px auto 0;width:1px;height:43px;background:#fff9}@keyframes warmBloom{0%{opacity:0}34%{opacity:.48}66%{opacity:.26}100%{opacity:0}}
+    section{padding:88px clamp(26px,7vw,62px);text-align:center;position:relative}.welcome{background:var(--paper)}.ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:0 auto 22px;font:italic 16px var(--serif)}.ornament:before,.ornament:after{content:"";height:1px;width:38px;background:var(--line)}.section-kicker{margin:0 0 17px;color:var(--gold);font-size:9px;letter-spacing:.26em;text-transform:uppercase}.section-title{font:400 clamp(30px,8vw,44px)/1.12 var(--serif);color:var(--maroon);margin:0;white-space:pre-line}.welcome p,.closing p{max-width:440px;margin:22px auto 0;font:16px/1.9 var(--serif);color:#62534b}.countdown-section{background:#efe7da;padding-top:75px;padding-bottom:77px}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:470px;margin:32px auto 0}.countdown-item{padding:15px 3px 12px;border-top:1px solid #bda87f;border-bottom:1px solid #bda87f}.countdown-item strong{display:block;color:var(--maroon);font:34px/1.1 var(--serif);font-weight:400}.countdown-item span{display:block;margin-top:8px;color:var(--muted);font-size:8px;letter-spacing:.15em;text-transform:uppercase}.events{background:var(--paper)}.event-list{display:grid;gap:13px;margin-top:35px;text-align:left}.event-card{display:grid;grid-template-columns:75px 1fr;gap:17px;padding:20px 18px;border:1px solid var(--line);background:#fffdf9;align-items:start}.event-mark{color:var(--gold);font:italic 16px var(--serif);text-align:center;border-right:1px solid var(--line);padding:5px 12px 5px 0}.event-name{margin:0;color:var(--maroon);font:24px/1.1 var(--serif)}.event-meta{margin:8px 0 0;font-size:11px;letter-spacing:.04em;color:#71645a;line-height:1.7}.event-desc{margin:9px 0 0;color:#80736a;font:italic 13px/1.5 var(--serif)}.map-link{display:inline-block;margin-top:10px;color:var(--maroon);font-size:9px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #cdb993;padding-bottom:3px}.wedding-day{padding:90px 28px;background:var(--maroon);color:var(--ivory);overflow:hidden}.wedding-day:before,.wedding-day:after{content:"✳";position:absolute;color:#d2b77c22;font-size:190px;line-height:1;top:50%;transform:translateY(-50%)}.wedding-day:before{left:-65px}.wedding-day:after{right:-65px}.wedding-day .section-kicker{color:#d8c08d}.wedding-day .section-title{font-size:clamp(41px,10vw,64px);color:var(--ivory)}.day-date{margin:22px 0 10px;font:italic 20px var(--serif);color:#e9d9bb}.day-venue{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#e7d9c6;line-height:1.9}.video-section{background:#f0e8dc;padding-top:77px;padding-bottom:82px}.video-frame{width:100%;aspect-ratio:9/16;max-height:520px;margin:29px auto 0;background:#392a26;overflow:hidden;box-shadow:0 14px 34px #392a261c}.video-frame iframe{width:100%;height:100%;border:0}.memories{padding-top:68px;padding-bottom:72px;background:var(--paper)}.memory-note{max-width:380px;margin:18px auto 0;color:var(--muted);font:italic 15px/1.7 var(--serif)}.rsvp{background:#eee4d5;padding-top:75px;padding-bottom:76px}.rsvp-contact{margin:24px auto 0;font:italic 20px var(--serif);color:var(--maroon)}.rsvp-contact a{color:inherit;text-decoration:none}.closing{background:var(--paper);padding-top:70px;padding-bottom:76px}.closing-mark{font:italic 48px var(--serif);color:var(--gold);margin-top:18px}.closing p{font-style:italic}.reveal{opacity:0;transform:translateY(20px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.25,1)}.reveal.in-view{opacity:1;transform:none}.event-card.reveal:nth-child(2){transition-delay:.08s}.event-card.reveal:nth-child(3){transition-delay:.16s}.event-card.reveal:nth-child(4){transition-delay:.24s}.event-card.reveal:nth-child(5){transition-delay:.32s}@keyframes heroDrift{from{transform:scale(1.015)}to{transform:scale(1.065)}}@media(max-width:500px){.cover{min-height:100svh}.hero{min-height:660px;height:94svh}.section-padding{padding-left:22px;padding-right:22px}section{padding-left:24px;padding-right:24px}.event-card{grid-template-columns:62px 1fr;padding:17px 13px;gap:13px}.event-mark{font-size:14px}.event-name{font-size:22px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <main class="invitation" id="invitation">
+    <div class="cover" id="cover" role="button" tabindex="0">
+      <video id="coverVideo" playsinline webkit-playsinline preload="metadata" muted></video>
+      <div class="cover-hint" id="coverHint"></div>
+    </div>
+    <section class="hero" id="hero">
+      <video id="heroVideo" playsinline webkit-playsinline preload="auto" autoplay muted loop aria-hidden="true"></video>
+      <div class="hero-copy"><p class="eyebrow" id="heroEyebrow"></p><h1 class="hero-names" id="heroNames"></h1><div class="hero-date" id="heroDate"></div><span class="hero-scroll" id="heroScroll"></span></div>
+    </section>
+    <section class="welcome"><div class="reveal"><div class="ornament" id="welcomeOrnament"></div><p class="section-kicker" id="welcomeKicker"></p><h2 class="section-title" id="welcomeTitle"></h2><p id="welcomeBody"></p></div></section>
+    <section class="countdown-section"><div class="reveal"><p class="section-kicker" id="countdownKicker"></p><h2 class="section-title" id="countdownTitle"></h2><div class="countdown" id="countdown" aria-live="off"></div></div></section>
+    <section class="events"><div class="reveal"><div class="ornament" id="eventsOrnament"></div><p class="section-kicker" id="eventsKicker"></p><h2 class="section-title" id="eventsTitle"></h2></div><div class="event-list" id="eventList"></div></section>
+    <section class="wedding-day"><div class="reveal"><p class="section-kicker" id="dayKicker"></p><h2 class="section-title" id="dayTitle"></h2><p class="day-date" id="dayDate"></p><div class="day-venue" id="dayVenue"></div></div></section>
+    <section class="video-section"><div class="reveal"><p class="section-kicker" id="filmKicker"></p><h2 class="section-title" id="filmTitle"></h2><div class="video-frame"><iframe id="weddingFilm" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div></section>
+    <section class="memories"><div class="reveal"><div class="ornament" id="memoriesOrnament"></div><p class="section-kicker" id="memoriesKicker"></p><h2 class="section-title" id="memoriesTitle"></h2><p class="memory-note" id="memoriesBody"></p></div></section>
+    <section class="rsvp"><div class="reveal"><p class="section-kicker" id="rsvpKicker"></p><h2 class="section-title" id="rsvpTitle"></h2><p class="welcome" style="padding:0;background:none"><span id="rsvpText"></span></p><p class="rsvp-contact" id="rsvpContact"></p></div></section>
+    <section class="closing"><div class="reveal"><p class="section-kicker" id="closingKicker"></p><h2 class="section-title" id="closingNames"></h2><div class="closing-mark" id="closingMark"></div><p id="closingBody"></p></div></section>
+  </main>
+  <script src="./wedding-content.js"></script>
+  <script>
+    const $=s=>document.querySelector(s), cfg=WEDDING_CONFIG, copy=INVITATION_COPY;
+    document.documentElement.classList.add('opening-locked');document.body.classList.add('opening-locked');
+    document.title=copy.pageTitle;document.querySelector('meta[name="description"]').content=copy.pageDescription;
+    $('#cover').setAttribute('aria-label',copy.coverAriaLabel);$('#coverVideo').setAttribute('aria-label',copy.coverVideoLabel);$('#hero').setAttribute('aria-label',copy.heroAriaLabel);$('#weddingFilm').title=copy.filmFrameTitle;
+    const textFields={coverHint:'coverHint',heroEyebrow:'heroEyebrow',welcomeOrnament:'welcomeOrnament',welcomeKicker:'welcomeKicker',welcomeTitle:'welcomeTitle',welcomeBody:'welcomeBody',countdownKicker:'countdownKicker',countdownTitle:'countdownTitle',eventsOrnament:'eventsOrnament',eventsKicker:'eventsKicker',eventsTitle:'eventsTitle',dayKicker:'weddingDayKicker',dayTitle:'weddingDayTitle',filmKicker:'filmKicker',filmTitle:'filmTitle',memoriesOrnament:'memoriesOrnament',memoriesKicker:'memoriesKicker',memoriesTitle:'memoriesTitle',memoriesBody:'memoriesBody',rsvpKicker:'rsvpKicker',rsvpTitle:'rsvpTitle',closingKicker:'closingKicker',closingMark:'closingMark',closingBody:'closingBody'};
+    Object.entries(textFields).forEach(([id,key])=>{const node=$('#'+id);node.textContent=copy[key]||''});
+    const cover=$('#cover'), coverVideo=$('#coverVideo'), hero=$('#hero'), heroVideo=$('#heroVideo');
+    // Hosted builds resolve /videos from the site root; direct file:// previews
+    // need the same assets addressed through the project's public directory.
+    const videoSource=path=>location.protocol==='file:'?new URL(`./public${path}`,document.baseURI).href:path;
+    coverVideo.src=videoSource(cfg.coverVideo); heroVideo.src=videoSource(cfg.heroVideo);
+    $('#heroEyebrow').textContent='Together with our families';
+    $('#heroNames').innerHTML=`${cfg.brideName}<span class="amp">&</span>${cfg.groomName}`;
+    $('#closingNames').textContent=`${cfg.brideName} & ${cfg.groomName}`;
+    $('#heroDate').textContent=cfg.displayDate;
+    $('#dayDate').textContent=cfg.displayDate;
+    $('#dayVenue').textContent=cfg.weddingVenue;
+    $('#rsvpText').textContent=cfg.rsvpBy;
+    $('#rsvpContact').innerHTML=cfg.contactPhone?`${cfg.contactName} · <a href="tel:${cfg.contactPhone}">${cfg.contactPhone}</a>`:cfg.contactName;
+    const yt=cfg.youtubeVideo, videoId=(yt.match(/(?:shorts\/|youtu\.be\/|v=)([\w-]{11})/)||[])[1];
+    if(videoId) $('#weddingFilm').src=`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`;
+    const maps=q=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+    $('#eventList').innerHTML=cfg.events.map((e,i)=>`<article class="event-card reveal"><div class="event-mark">0${i+1}</div><div><h3 class="event-name">${e.name}</h3><p class="event-meta">${e.date} · ${e.time}<br>${e.venue} · ${e.address}</p>${e.description?`<p class="event-desc">${e.description}</p>`:''}<a class="map-link" href="${maps(`${e.venue}, ${e.address}`)}" target="_blank" rel="noreferrer">${copy.mapLabel}</a></div></article>`).join('');
+    // The first intentional touch/click starts the muted inline cover playback.
+    let opened=false, transitioning=false, waitingForHeroFrame=false, heroStarted=false, transitionTimer;
+    let heroFrameReady=heroVideo.readyState>=2;
+    const markHeroFrameReady=()=>{heroFrameReady=true};
+    heroVideo.addEventListener('loadeddata',markHeroFrameReady,{once:true});
+    if('requestVideoFrameCallback'in HTMLVideoElement.prototype) heroVideo.requestVideoFrameCallback(markHeroFrameReady);
+    function revealHero(){
+      if(transitioning)return;
+      // Keep the playing cover over the hero until the hero has a decoded frame.
+      if(!heroFrameReady){if(!waitingForHeroFrame){waitingForHeroFrame=true;heroVideo.addEventListener('loadeddata',()=>{waitingForHeroFrame=false;revealHero()},{once:true})}return}
+      transitioning=true;
+      cover.classList.add('transitioning');
+      hero.classList.add('visible');
+      transitionTimer=setTimeout(()=>{cover.hidden=true;},1850);
+    }
+    function openCover(){
+      if(opened)return;
+      opened=true;cover.classList.add('started');
+      // Call both play methods synchronously inside the cover gesture. Muted inline playback
+      // is permitted on mobile, and this starts/warms the hero behind the opaque cover.
+      const coverPlay=coverVideo.play();
+      if(!heroStarted){heroStarted=true;heroVideo.play().catch(()=>{heroStarted=false})}
+      const unlock=()=>{document.documentElement.classList.remove('opening-locked');document.body.classList.remove('opening-locked')};
+      if(coverPlay&&coverPlay.then)coverPlay.then(unlock).catch(()=>{opened=false;cover.classList.remove('started')});else unlock();
+    }
+    cover.addEventListener('click',openCover);
+    cover.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCover()}});
+    coverVideo.addEventListener('timeupdate',()=>{if(coverVideo.currentTime>=6.5)revealHero()});
+    coverVideo.addEventListener('ended',revealHero);
+    coverVideo.addEventListener('error',()=>{if(opened)revealHero()});
+    const target=new Date(cfg.weddingDate).getTime(), units=copy.countdownUnits.map((label,i)=>[label,[86400,3600,60,1][i]]);
+    function tick(){let left=Math.max(0,Math.floor((target-Date.now())/1000));$('#countdown').innerHTML=units.map(([label,size])=>{const n=Math.floor(left/size);left%=size;return `<div class="countdown-item"><strong>${String(n).padStart(2,'0')}</strong><span>${label}</span></div>`}).join('')}
+    tick();setInterval(tick,1000);
+    if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target)}}),{threshold:.14});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in-view'));
+  </script>
+</body>
+</html>
