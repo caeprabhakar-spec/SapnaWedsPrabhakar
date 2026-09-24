@@ -1,11 +1,11 @@
 // Edit this file to change all invitation text, names, dates, venues and events.
 // Video files belong in public/videos/; keep these URL paths for hosted builds.
 window.WEDDING_CONFIG = {
-  brideName: "Aarohi",
-  groomName: "Vihaan",
+  brideName: "Sapna",
+  groomName: "Prabhakar",
   weddingDate: "2027-02-14T18:00:00+05:30",
-  displayDate: "14 February 2027",
-  weddingVenue: "The Royal Courtyard · Jaipur, Rajasthan",
+  displayDate: "23 April 2019",
+  weddingVenue: "The Royal Courtyard · Kanpur, Uttar Pradesh",
   coverVideo: "/videos/lock-cover.mp4",
   heroVideo: "/videos/hero.mp4",
   youtubeVideo: "https://www.youtube.com/shorts/inc2iXzTUbI",
