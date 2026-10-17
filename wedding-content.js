@@ -10,7 +10,7 @@ window.WEDDING_CONFIG = {
   coverPoster: "/images/thumb-wedding.jpg",
   heroVideo: "/videos/cover.mp4",
   backgroundMusic: "/audio/royal-wedding.mp3",
-  coupleImage: "/images/couple.png",
+  coupleImage: "/images/couplelow.jpg",
   youtubeVideo: "https://www.youtube.com/shorts/inc2iXzTUbI",
   rsvpBy: "Please reply by 14 January 2027",
   rsvpMessage: "Hello, I would like to RSVP for Aarohi and Vihaan’s wedding.",
