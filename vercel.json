@@ -9,6 +9,10 @@
     {
       "source": "/images/:path*",
       "destination": "/public/images/:path*"
+    },
+    {
+      "source": "/audio/:path*",
+      "destination": "/public/audio/:path*"
     }
   ]
 }
